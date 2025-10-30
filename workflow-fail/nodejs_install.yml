@@ -1,0 +1,9 @@
+---
+- name:  Nodejs server install
+  hosts: all
+
+  tasks:
+  - name: install nodejs
+    dnf:
+      name:  nodejs
+      state: present
